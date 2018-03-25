@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Heatmaps and Crime Correlation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">Emergency Data Analytics</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="datavisuals.html">Data Visualization</a>
+						<a href="dispatchPredictor.html">Dispatch Predictor</a>
+						<a href="delayAnalysis.html">Delay Analysis</a>
+						<a href="heatmaps.html">Heatmaps and Crime Correlation</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Heatmaps and Crime Correlation</h2>
+					</header>
+					<p style="color:black;">Linked below is a heatmap representing the frequency of all types of emergency calls provided in the dataset. The emergency calls are clearly concentrated towards the upper right of the city which one would expect as this is nearer to the center of the city and emergency calls naturally increase in frequency for more densely populated areas. Later on in this page, the different heatmaps will also be correlated with crime to deduce which areas of the city are the most and least safe.<br></p>
+					<a href="heatmaps/frequencyHeatmap.html" class="button special">Frequency Heatmap</a>
+					<p><br></p>
+					<p style="color:black;">While the frequency heatmap represents all types of emergency calls, however, there is a value in having separate heatmaps of urgent and non-urgent calls as this can illustrate if certain areas have more non-urgent citizen assists (potentially related to a more elderly demographic of people living there) or more urgent calls which can potentially be linked to crime and a less safe area. The separated heatmaps are thus provided below, but it turns out that for San Francisco both are highly similar to each other and to the frequency heatmap provided above.</p>
+					<div class="flex flex-2">
+						<article>
+							<div class="image fit">
+								<img src="images/urgent.png" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Urgent Calls Heatmap</h3>
+							</header>
+							<p>This presents a heatmap in which the only data points are urgent calls.</p>
+							<footer>
+								<a href="heatmaps/urgentHeatmap.html" class="button special">Urgent Heatmap</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+								<img src="images/noturgent.png" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Non-Urgent Calls Heatmaps</h3>
+							</header>
+							<p>This presents a heatmap in which the only data points are non-urgent calls.</p>
+							<footer>
+								<a href="heatmaps/notUrgentHeatmap.html" class="button special">Non-Urgent Heatmap</a>
+							</footer>
+						</article>
+					</div>
+
+<p><br></p>
+					<h3 font size=18>Crime Correlation</h3>
+
+					      <div><iframe width="760px" title="Analysis Neighborhoods" height="646px" src="https://data.sfgov.org/w/p5b7-5n3h/ikek-yizv?cur=PBSrqmKS9Uo&from=root" frameborder="0"scrolling="no"><a href="https://data.sfgov.org/Geographic-Locations-and-Boundaries/Analysis-Neighborhoods/p5b7-5n3h" title="Analysis Neighborhoods" target="_blank">Analysis Neighborhoods</a></iframe><p><a href="http://www.socrata.com/" target="_blank">Powered by Socrata</a></p></div>
+    
+					<p>These heatmaps can also be used to address which parts of the city are the most safe and calm within San Francisco as greater number of emergency calls clearly mean a less calm and potentially less safe area. Specifically, more urgent calls correlate significantly with crime and can be used to identify the safety of a neighborhood at least in terms of its crime rate. As observed above however, the urgent and non-urgent heatmaps are almost identical with the calls being extremely dense in the upper right corner of the city and decreasing greatly as one gets farther away from that corner. Thus, regardless of whether one is considering which parts of the neighborhood are most calm (the least non-urgent dispatches) or most safe (the least urgent dispatches), any neighborhood not in the upper right corner (specifically South of Market and Tenderloin to name the most concentrated pockets of activity) will be relatively calm and safe.</p>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; Suchir Bhatt 2018
+						</div>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/suchir-b-269b46126/" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+							<li><a href="https://github.com/suchir1" class="icon fa-github"><span class="label">Github</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
